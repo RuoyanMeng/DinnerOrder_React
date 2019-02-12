@@ -1,62 +1,53 @@
+import ObservableModel from "./ObservableModel";
+
+const BASE_URL = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com";
 const httpOptions = {
-  headers: {'X-Mashape-Key': 'YOUR_API_KEY'}
+  headers: { "X-Mashape-Key": "YOUR_API_KEY" }
 };
 
-const DinnerModel = function () {
-
-  let numberOfGuests = 4;
-  let observers = [];
-
-  this.setNumberOfGuests = function (num) {
-    numberOfGuests = num;
-    notifyObservers();
-  };
-
-  this.getNumberOfGuests = function () {
-    return numberOfGuests;
-  };
-
-  // API Calls
-
-  this.getAllDishes = function () {
-    const url = 'https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/search'
-    return fetch(url, httpOptions)
-      .then(processResponse)
-      .catch(handleError)
+class DinnerModel extends ObservableModel {
+  constructor() {
+    super();
+    this._numberOfGuests = 4;
+    this.getNumberOfGuests();
   }
-  
-  // API Helper methods
 
-  const processResponse = function (response) {
+  /**
+   * Get the number of guests
+   * @returns {number}
+   */
+  getNumberOfGuests() {
+    return this._numberOfGuests;
+  }
+
+  /**
+   * Set number of guests
+   * @param {number} num
+   */
+  setNumberOfGuests(num) {
+    this._numberOfGuests = num;
+    this.notifyObservers();
+  }
+
+  // API methods
+
+  /**
+   * Do an API call to the search API endpoint.
+   * @returns {Promise<any>}
+   */
+  getAllDishes() {
+    const url = `${BASE_URL}/recipes/search`;
+    return fetch(url, httpOptions).then(this.processResponse);
+  }
+
+  processResponse(response) {
     if (response.ok) {
-      return response.json()
+      return response.json();
     }
     throw response;
   }
-  
-  const handleError = function (error) {
-    if (error.json) {
-      error.json().then(error => {
-        console.error('getAllDishes() API Error:', error.message || error)
-      })
-    } else {
-      console.error('getAllDishes() API Error:', error.message || error)
-    }
-  }
+}
 
-  // Observer pattern
-
-  this.addObserver = function (observer) {
-    observers.push(observer);
-  };
-
-  this.removeObserver = function (observer) {
-    observers = observers.filter(o => o !== observer);
-  };
-
-  const notifyObservers = function () {
-    observers.forEach(o => o.update());
-  };
-};
-
-export const modelInstance = new DinnerModel();
+// Export an instance of DinnerModel
+const modelInstance = new DinnerModel();
+export default modelInstance;
