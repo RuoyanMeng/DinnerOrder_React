@@ -1,0 +1,22 @@
+
+.masonry-cards{
+    column-count: 3; 
+    column-gap: 0;
+}
+.card{
+    break-inside: avoid; box-sizing: border-box; padding: 10px;
+}
+
+@media (min-width: 200px) { 
+    .masonry-cards { column-count: 1; 
+    } } 
+@media (min-width: 800px) { 
+    .masonry-cards { column-count: 2; 
+    } } 
+@media (min-width: 1000px) { 
+    .masonry-cards { column-count: 3;
+    } }
+
+.search-bar{
+    margin-left: 1rem
+}
