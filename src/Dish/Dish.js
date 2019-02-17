@@ -99,7 +99,7 @@ class Dish extends Component {
                     )
                 });
 
-                let tableTitle = `Ingredient for ${modelInstance.getNumberOfGuests()} People, Price: ${_dish.pricePerServing * numGuest}`
+                let tableTitle = `Ingredient for ${modelInstance.getNumberOfGuests()} People, Price: ${(_dish.pricePerServing * numGuest).toFixed(2)}`
 
                 dish =
                     <div>
