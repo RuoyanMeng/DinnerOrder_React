@@ -116,7 +116,7 @@ class Sidebar extends Component {
             onChange={this.onNumberOfGuestsChanged}
           />
         </p>
-        <a class="hide-bar avenir tc flex items-center justify-center pa1 bg-lightest-blue navy" onClick={this.display_name.bind(this)}> hide</a>
+        <a className="hide-bar avenir tc flex items-center justify-center pa1 bg-lightest-blue navy" onClick={this.display_name.bind(this)}> hide</a>
         {/* table here */}
         
         <div className="pa4 table-sidebar" style={{display:this.state.display_name}}>

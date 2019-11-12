@@ -101,7 +101,7 @@ class Dishes extends Component {
         dishesList = this.state.dishes.map(dish => {
 
           return (
-            <div className="card">
+            <div className="card" key={dish.id}>
             <Link className="no-underline avenir tc" to={"/dishDetails"} onClick={() => this.itemClick(dish.id)} key={dish.id}>
               <div className="br2 ba dark-gray b--black-10 mw5" >
                 <img src={this.state.baseUri + "/" + dish.image} className="db w-100 br2 br--top" />
