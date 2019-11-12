@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/DinnerOrder_React/static/css/main.af027514.chunk.css",
-    "main.js": "/DinnerOrder_React/static/js/main.ff4179ee.chunk.js",
-    "main.js.map": "/DinnerOrder_React/static/js/main.ff4179ee.chunk.js.map",
+    "main.js": "/DinnerOrder_React/static/js/main.49d4c6d9.chunk.js",
+    "main.js.map": "/DinnerOrder_React/static/js/main.49d4c6d9.chunk.js.map",
     "runtime-main.js": "/DinnerOrder_React/static/js/runtime-main.f3f81b1a.js",
     "runtime-main.js.map": "/DinnerOrder_React/static/js/runtime-main.f3f81b1a.js.map",
     "static/js/2.fab9eb1f.chunk.js": "/DinnerOrder_React/static/js/2.fab9eb1f.chunk.js",
     "static/js/2.fab9eb1f.chunk.js.map": "/DinnerOrder_React/static/js/2.fab9eb1f.chunk.js.map",
     "index.html": "/DinnerOrder_React/index.html",
-    "precache-manifest.cd712a75285a54cf6a35eb6b6c6ce17c.js": "/DinnerOrder_React/precache-manifest.cd712a75285a54cf6a35eb6b6c6ce17c.js",
+    "precache-manifest.7a83a4a7dc1c9144371d9a13c0efd63b.js": "/DinnerOrder_React/precache-manifest.7a83a4a7dc1c9144371d9a13c0efd63b.js",
     "service-worker.js": "/DinnerOrder_React/service-worker.js",
     "static/css/main.af027514.chunk.css.map": "/DinnerOrder_React/static/css/main.af027514.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.f3f81b1a.js",
     "static/js/2.fab9eb1f.chunk.js",
     "static/css/main.af027514.chunk.css",
-    "static/js/main.ff4179ee.chunk.js"
+    "static/js/main.49d4c6d9.chunk.js"
   ]
 }

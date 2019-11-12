@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/DinnerOrder_React/precache-manifest.cd712a75285a54cf6a35eb6b6c6ce17c.js"
+  "/DinnerOrder_React/precache-manifest.7a83a4a7dc1c9144371d9a13c0efd63b.js"
 );
 
 self.addEventListener('message', (event) => {
