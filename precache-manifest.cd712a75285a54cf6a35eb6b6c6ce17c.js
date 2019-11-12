@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5da83ff2ce8601beaad4efbc2d1d417a",
+    "revision": "5bfce5dead615e3bbb3e82f4c3d8c5ae",
     "url": "/DinnerOrder_React/index.html"
   },
   {
-    "revision": "a1add4cf6907fc411a44",
+    "revision": "c9fb4f6f3c8f94f51d45",
     "url": "/DinnerOrder_React/static/css/main.af027514.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DinnerOrder_React/static/js/2.fab9eb1f.chunk.js"
   },
   {
-    "revision": "a1add4cf6907fc411a44",
-    "url": "/DinnerOrder_React/static/js/main.61e85638.chunk.js"
+    "revision": "c9fb4f6f3c8f94f51d45",
+    "url": "/DinnerOrder_React/static/js/main.ff4179ee.chunk.js"
   },
   {
     "revision": "06035a039ce7ee03ba33",
